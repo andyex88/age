@@ -1,17 +1,17 @@
-driving = input('請問你有沒有開過車？')
-if driving != '有' and driving != '沒有':
-	print('只能輸入 有/沒有')
+driving = input('Have you driven before？')
+if driving != 'yes' and driving != 'no':
+	print('Only enter yes/no')
 	raise SystemExit
 
-age = input('請問你的年齡？')
+age = input('How old are you?')
 age = int(age)
-if driving == '有':
+if driving == 'yes':
 	if age >= 18:
-		print('你通過測驗了')
+		print('You have passed the test!')
 	else:
-		print('奇怪 你怎麼會有開過車')
-elif driving == '沒有':
+		print('Weird! How could you have driven?')
+elif driving == 'no':
 	if age >= 18:
-		print('你可以考駕照了啊, 怎麼還不去考')
+		print('You can go get a driver license already! Why have you not?')
 	else:
-		print('很好 再過幾年就可以考駕照了')
+		print('Good! You can get a license a few more years later')
